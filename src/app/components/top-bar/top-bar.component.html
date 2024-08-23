@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row class="topbar-row">
+        <div class="title-section">
+            <img [ngSrc]="logoUrl"
+                [width]="65"
+                [height]="65"
+                alt="App logo"
+                class="logo" />
+                <span class="title">{{ title }}</span>
+        </div>
+        <button mat-raised-button 
+            color="accent"
+            (mouseenter)="isHovered = true"
+            (mouseleave)="isHovered = false">
+            <mat-icon color="primary" 
+                svgIcon="google-icon"></mat-icon>
+            <span 
+                [@textVisibility]="isHovered ? 'visible' : 'hidden'" 
+                class="login-text">
+                {{ isLoggedIn ? 'Hola' : 'Login' }}
+              </span>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>

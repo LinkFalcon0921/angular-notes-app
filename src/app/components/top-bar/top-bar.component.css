@@ -1,0 +1,41 @@
+/* topbar.component.css */
+.topbar-row {
+    display: flex;
+    justify-content: space-between;
+
+    margin: .4em 0;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    margin-right: 16px;
+}
+
+.title {
+    font-size: 1.2em;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+mat-icon {
+    margin-right: 8px;
+}
+
+.login-text {
+    white-space: nowrap;
+}
